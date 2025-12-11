@@ -17,7 +17,6 @@ Versions treated as vulnerable in this script:
 
 This script is designed for a **server hosting Coolify** with Next.js apps running inside Docker containers.
 
----
 
 ## How It Works
 
@@ -32,7 +31,6 @@ This script is designed for a **server hosting Coolify** with Next.js apps runni
    - Or **no vulnerable RSC package detected**.
 5. At the end, prints a summary: number of containers scanned and number flagged as vulnerable.
 
----
 
 ## Requirements
 
@@ -42,7 +40,6 @@ This script is designed for a **server hosting Coolify** with Next.js apps runni
   - `docker ps` must work.
 - Sufficient privileges (usually `root` or `sudo`).
 
----
 
 ## Installation
 
@@ -117,7 +114,6 @@ in files under the scanned roots (lockfiles, build artifacts, etc.).
 This is **heuristic**, not a full dependency resolver.  
 It is a strong indicator you should check and patch that app, but **not** a formal SBOM analysis.
 
----
 
 ### Container marked “No vulnerable RSC package detected”
 
@@ -128,7 +124,6 @@ This is a **good sign**, but you should still:
 - Keep dependencies **up to date**
 - Run regular security scans (e.g. **Trivy**, **Snyk**, etc.)
 
----
 
 ## What To Do If a Container Is Marked Vulnerable
 
